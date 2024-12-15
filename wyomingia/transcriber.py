@@ -22,7 +22,7 @@ class GladiaTranscriber:
 
     def __init__(self):
         key: str | None = os.environ.get("GLADIA_KEY")
-        if self.gladia_key is None:
+        if key is None:
             raise ValueError(
                 "A valid GLADIA_KEY (API key) is required by this transcriber"
             )
