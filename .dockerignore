@@ -1,0 +1,15 @@
+# Exclude the project virtual environment from image builds
+.venv
+
+# Exclude python cache
+**/__pycache__
+**/*.pyc
+
+# Exlude unwanted files and folders
+.dockerignore
+.git
+.env
+.gitignore
+.ruff_cache
+.vscode
+Dockerfile
