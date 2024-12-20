@@ -30,6 +30,8 @@ class GladiaTranscriber:
         self.custom_vocabulary = [
             word for word in os.environ.get("CUSTOM_VOCABULARY", "").split(",") if word
         ]
+        if len(self.custom_vocabulary):
+            _LOGGER.info(f"Using custom vocabulary config: {self.custom_vocabulary}")
 
     async def transcribe(self, chunks: list[AudioChunk], language: str) -> str:
         _LOGGER.debug("Transcription started…")
