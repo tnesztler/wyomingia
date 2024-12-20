@@ -104,4 +104,5 @@ class GladiaTranscriber:
         if "url" in data:
             return data["id"], data["url"]
         else:
+            _LOGGER.error(data)
             raise Exception("Limit reached")
