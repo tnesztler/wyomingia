@@ -1,0 +1,23 @@
+[project]
+name = "wyomingia"
+version = "0.1.0"
+description = "Implementation of the Wyoming Protocol using Gladia's API"
+authors = [
+    {name = "Thibaud Nesztler"},
+]
+license = {text = "MIT License"}
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "requests>=2.32.3",
+    "websockets>=14.1",
+    "wyoming>=1.6.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.8.0",
+]
+
+[tool.ruff.lint]
+extend-select = ["I"]
