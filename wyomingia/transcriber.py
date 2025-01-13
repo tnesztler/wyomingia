@@ -83,7 +83,6 @@ class GladiaTranscriber:
             "sample_rate": rate,
             "bit_depth": 8 * width,
             "channels": channels,
-            "pre_processing": {"audio_enhancer": True},
             "messages_config": {
                 "receive_acknowledgments": False,
                 "receive_partial_transcripts": False,
