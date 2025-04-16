@@ -8,7 +8,6 @@ import requests
 import websockets
 import websockets.asyncio
 import websockets.asyncio.client
-import websockets.asyncio.connection
 from wyoming.audio import AudioChunk
 
 _LOGGER = logging.getLogger(__name__)
